@@ -2,6 +2,7 @@
 
 # dependencies
 /react-spring-tuts/node_modules
+/eZRhymeReact/node_modules
 
 # production
 /build
