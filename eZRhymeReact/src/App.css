@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+  --off-white: #eef4d7;
+  --light-green: #7eab78;
+  --green: #497643;
+  --dark-green: #13400d;
+  --roboto: 'Roboto', sans-serif;
+  --russo: 'Russo One', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+div,
+span,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.helloWorld {
+  padding: 1rem;
+}
+
+.app-header {
+  font-family: 'Russo One', sans-serif;
+
+  padding: 1rem;
+}
+
+.app-footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #e4e4e4;
+  width: 100%;
+  text-align: center;
+}
+.app-footer-copy {
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 1rem;
+  color: #555;
+}
+
+.relative {
+  position: relative;
+}
+
+.pb-25 {
+  padding-bottom: 2.5rem;
+}
+
+.min-h-screen {
+  min-height: 97vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: 900;
+}
+.justi-b {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.icon-large {
+  font-size: 2.3rem;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 65vw;
+  height: 100vh;
+  z-index: 50;
+  padding: 1rem;
+  margin: 0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.nav-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-title {
+  font-weight: 900;
+}
+
+.nav-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 1rem;
+  border-top: 1px solid rgba(214, 214, 214, 0.774);
+}
+
+.nav-list {
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(214, 214, 214, 0.774);
+}
+.block {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.views {
+  padding: 1rem;
+}
+
+/*------------------------*/
+/* Products */
+/*------------------------*/
+
+.card__price {
+  color: #0099ff;
+  font-size: 1.6rem;
+  text-shadow: none;
+  flex-basis: 10%;
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+.card__name {
+  color: #1d1d1d;
+  font-size: 2rem;
+  text-shadow: none;
+  flex-basis: 20%;
+  flex-grow: 2;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.card__description {
+  color: #1d1d1d;
+  font-size: 1.6rem;
+  text-shadow: none;
+  flex-basis: 20%;
+  flex-grow: 2;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* ---------------------- */
+/* ------- MODAL -------- */
+/* ---------------------- */
+.modal-container {
+  position: fixed;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 90vw;
+  left: 50%;
+  padding: 2rem;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.modal:before {
+  content: '';
+  position: relative;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 60;
+}
+
+.modal:target:before {
+  display: relative;
+}
+
+.modal:target .modal-container {
+  top: 10%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+.modal__close {
+}
+/* MODAL OVERLAY */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+}
+/* -- END MODAL-- */
+/* |||||||||||||| */
+/* --- CARDS --- */
+
+.product__cards--container {
+}
+.product__card {
+}
+.card--container {
+}
+
+.product__image {
+  min-height: 10rem;
+  min-width: 10rem;
+  order: -1;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  outline: transparent;
+  box-shadow: 2px 2px 4px 0px #333;
+  font-weight: bold;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #0099ff;
+  color: #fff;
+  transition: box-shadow 0.15s;
+}
+.btn:active {
+  box-shadow: 0px 0px 0px 0px #333;
+}
