@@ -12,7 +12,7 @@ import About from './Views/About';
 
 function App() {
   return (
-    <div className="relative pb-25 min-h-screen">
+    <div className="relative pb-25 h-screen bg-gray-200">
       <Router>
         <Header className="" />
         <div className="views">

@@ -22,8 +22,8 @@ function Home() {
     content = <Loader></Loader>;
   }
   return (
-    <div className="app-body">
-      <Dashboard data=""/>
+    <div className="flex">
+      <Dashboard data="" />
     </div>
   );
 }

@@ -26,12 +26,23 @@ function Navigation() {
 
   return (
     <nav>
-      <span className="text-xxl">
-        <FontAwesomeIcon icon={faBars} onClick={() => setShowMenu(!showMenu)} />
+      <span className="">
+        <FontAwesomeIcon
+          style={{ color: 'white', fontSize: '1.2rem' }}
+          icon={faBars}
+          onClick={() => setShowMenu(!showMenu)}
+        />
       </span>
 
       {maskTransitions(
-        (styles, item) => item && <animated.div className="nav-overlay" style={styles} onClick={() => setShowMenu(false)}></animated.div>
+        (styles, item) =>
+          item && (
+            <animated.div
+              className="nav-overlay"
+              style={styles}
+              onClick={() => setShowMenu(false)}
+            ></animated.div>
+          )
       )}
 
       {menuTransitions(
