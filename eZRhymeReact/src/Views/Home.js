@@ -22,7 +22,7 @@ function Home() {
     content = <Loader></Loader>;
   }
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <Dashboard data="" />
     </div>
   );

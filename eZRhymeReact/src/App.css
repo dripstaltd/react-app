@@ -5,6 +5,7 @@
   --btn-background-secondary: #5382f1;
   --background-gray: #efefef;
   --font-gray: #6c6c6c;
+  --icon-blue: #3766e7;
   --icon-gray: #a7b4bd;
   --font-primary: 'Archivo Black', sans-serif;
   --font-secondary: 'Hind', sans-serif;
@@ -17,20 +18,15 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   margin: 0;
   padding: 0;
 }
 
-
-.app-body{
+.app-body {
   height: 83vh;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
+
 span,
 ul,
 li,
@@ -41,22 +37,28 @@ div {
   padding: 0;
   margin: 0;
 }
-
-.pb-25 {
-  padding-bottom: 2rem;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-primary);
+  padding: 0;
+  margin: 0;
 }
 
 .nav-menu {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
-  width: 65vw;
+  background-color: var(--background-blue);
+  color: var(--background-gray);
+  width: 70vw;
   height: 100vh;
   z-index: 50;
   padding: 1rem;
   margin: 0;
-  
+  z-index: 100;
 }
 
 .friends {

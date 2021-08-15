@@ -1,39 +1,86 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faHome, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faCommentDots, faHome, faInfo } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const NavigationMenu = (props) => {
   return (
     <div>
-      <div className="font-sans ">le' ezRhymeZ Menu</div>
+      <div className="font-sans ">ezRhymeZ Logo</div>
       <ul className="nav-list">
         <li className="nav-item">
           <Link className="block" to="/" onClick={props.closeMenu}>
             <FontAwesomeIcon
-              style={{ color: 'var(--icon-gray)', fontSize: '1rem', marginRight: '.5rem' }}
+              style={{
+                color: 'var(--icon-blue)',
+                fontSize: '1.6rem',
+                marginRight: '.5rem',
+              }}
               icon={faHome}
             />
             Dashboard
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="block" to="/about" onClick={props.closeMenu}>
+          <Link className="block" to="/user-guides" onClick={props.closeMenu}>
             <FontAwesomeIcon
-              style={{ color: 'var(--icon-gray)', fontSize: '1.2rem', marginRight: '1rem' }}
+              style={{
+                color: 'var(--icon-blue)',
+                fontSize: '1.6rem',
+                marginRight: '1rem',
+              }}
               icon={faInfo}
             />
-            About
+            User Guide
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="block" to="/settings" onClick={props.closeMenu}>
+          <Link
+            className="block"
+            to="/contact"
+            onClick={props.closeMenu}
+            style={{ cursor: 'pointer' }}
+          >
             <FontAwesomeIcon
-              style={{ color: 'var(--icon-gray)', fontSize: '1rem', marginRight: '.5rem' }}
-              icon={faCog}
+              style={{
+                color: 'var(--icon-blue)',
+                fontSize: '1.6rem',
+                marginRight: '.5rem',
+                cursor: 'pointer',
+              }}
+              icon={faCommentDots}
             />
-            Settings
+            Bug Report & Feedback
           </Link>
+        </li>
+        <li className="nav-item">
+          <div className="block" href="#" onClick={props.closeMenu} style={{ cursor: 'pointer' }}>
+            <FontAwesomeIcon
+              style={{
+                color: 'var(--icon-blue)',
+                fontSize: '1.6rem',
+                marginRight: '.5rem',
+                cursor: 'pointer',
+              }}
+              icon={faYoutube}
+            />
+            Tutorials
+          </div>
+        </li>
+        <li className="nav-item">
+          <div className="block" onClick={props.closeMenu} style={{ cursor: 'pointer' }}>
+            <FontAwesomeIcon
+              style={{
+                color: 'var(--icon-blue)',
+                fontSize: '1.6rem',
+                marginRight: '.5rem',
+                cursor: 'pointer',
+              }}
+              icon={faDiscord}
+            />
+            Discord Connect
+          </div>
         </li>
       </ul>
     </div>

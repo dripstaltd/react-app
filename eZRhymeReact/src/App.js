@@ -8,7 +8,11 @@ import Footer from './Components/Footer';
 
 // Views
 import Home from './Views/Home';
-import About from './Views/About';
+import UserGuides from './Views/UserGuides';
+import Contact from './Views/Contact';
+import WordPairs from './Views/WordPairs';
+import SlangDictionary from './Views/SlangDictionary';
+import SpeedDial from './Components/SpeedDials';
 
 function App() {
   return (
@@ -20,11 +24,22 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/user-guides">
+              <UserGuides />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/word-pairs">
+              <WordPairs />
+            </Route>
+            <Route path="/slang-dictionary">
+              <SlangDictionary />
             </Route>
           </Switch>
+          <SpeedDial />
         </div>
+
         <Footer />
       </Router>
     </div>
