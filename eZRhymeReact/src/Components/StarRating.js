@@ -9,8 +9,9 @@ const StarRating = () => {
     <span>
       {[...Array(5)].map((star, i) => {
         const ratingValue = i + 1;
+        const tKey = `3${i * Math.random()}`;
         return (
-          <label>
+          <label key={tKey / Math.random()}>
             <input
               type="radio"
               name="rating"

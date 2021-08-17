@@ -8,7 +8,6 @@ import {
   faVolumeOff,
   faPause,
 } from '@fortawesome/free-solid-svg-icons';
-import Slider from './Slider.js';
 
 function MusicPlayer() {
   const [playing, setPlaying] = useState(null);

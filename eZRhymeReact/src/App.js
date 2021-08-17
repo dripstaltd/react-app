@@ -3,18 +3,19 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Components
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './Components/Main/Header';
+import Footer from './Components/Main/Footer';
 
 // Views
-import Home from './Views/Home';
+import Dashboard from './Views/Dashboard';
 import UserGuides from './Views/UserGuides';
 import Contact from './Views/Contact';
 import WordPairs from './Views/WordPairs';
 import SlangDictionary from './Views/SlangDictionary';
-import SpeedDial from './Components/SpeedDials';
+import SpeedDial from './Components/NavComponents/SpeedDials';
 
 function App() {
+  console.log(Header);
   return (
     <div className="relative pb-25 h-screen bg-gray-200">
       <Router>
@@ -22,7 +23,7 @@ function App() {
         <div className="views">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Dashboard />
             </Route>
             <Route path="/user-guides">
               <UserGuides />
